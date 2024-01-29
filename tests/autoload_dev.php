@@ -2,4 +2,4 @@
 
 declare(strict_types=1);
 
-require_once __DIR__.'/../bin/phpunit.phar';
+return Phar::loadPhar(__DIR__.'/../bin/phpunit.phar');
