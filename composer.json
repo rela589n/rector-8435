@@ -1,0 +1,36 @@
+{
+    "name": "rela589n/rector-8435",
+    "type": "project",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Rela589n\\Rector8435\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rela589n\\Rector8435\\Tests\\": "tests/"
+        },
+        "files": [
+            "tests/autoload_dev.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Yevhen Sidelnyk",
+            "email": "zsidelnik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "rector/rector": "^0.19.2",
+        "phpstan/phpstan": "^1.10"
+    },
+    "scripts": {
+        "ci:phpstan": "vendor/bin/phpstan analyze ./",
+        "ci:rector": "vendor/bin/rector process --dry-run --clear-cache -vvv",
+        "ci:test": "bin/phpunit.phar --testdox --colors=always"
+    }
+}
