@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fa743930b8665509ae4de409f6ca85d",
+    "content-hash": "e5cb957d59f7c80c092cdcf5ef0e4c22",
     "packages": [],
     "packages-dev": [
         {
@@ -71,16 +71,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "0.19.2",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "bc96a99895bf47c6bfe70ea1b799f0081ed5a903"
+                "reference": "0301d3f4008cc05c5d12f0a45d69ae62e095598f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/bc96a99895bf47c6bfe70ea1b799f0081ed5a903",
-                "reference": "bc96a99895bf47c6bfe70ea1b799f0081ed5a903",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/0301d3f4008cc05c5d12f0a45d69ae62e095598f",
+                "reference": "0301d3f4008cc05c5d12f0a45d69ae62e095598f",
                 "shasum": ""
             },
             "require": {
@@ -93,6 +93,7 @@
                 "rector/rector-phpunit": "*",
                 "rector/rector-symfony": "*"
             },
+            "default-branch": true,
             "bin": [
                 "bin/rector"
             ],
@@ -115,7 +116,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/0.19.2"
+                "source": "https://github.com/rectorphp/rector/tree/main"
             },
             "funding": [
                 {
@@ -123,17 +124,19 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-19T10:58:30+00:00"
+            "time": "2024-01-30T10:08:17+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rector/rector": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

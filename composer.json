@@ -10,10 +10,7 @@
     "autoload-dev": {
         "psr-4": {
             "Rela589n\\Rector8435\\Tests\\": "tests/"
-        },
-        "files": [
-            "tests/autoload_dev.php"
-        ]
+        }
     },
     "authors": [
         {
@@ -25,7 +22,7 @@
         "php": ">=8.1"
     },
     "require-dev": {
-        "rector/rector": "^0.19.2",
+        "rector/rector": "dev-main#0301d3f4008cc05c5d12f0a45d69ae62e095598f",
         "phpstan/phpstan": "^1.10"
     },
     "scripts": {
